@@ -202,5 +202,40 @@
 #     print("Skaičius nedalinasi iš 7.")
 
 
+# #Užduotis 13 #
+#
+# pirmas_skaicius = float(input("Įveskite pirmą skaičių: "))
+# antras_skaicius = float(input("Įveskite antrą skaičių: "))
+# trecias_skaicius = float(input("Įveskite trečią skaičių: "))
+#
+# didziausias = pirmas_skaicius
+#
+# if antras_skaicius > didziausias:
+#     didziausias = antras_skaicius
+#
+# if trecias_skaicius > didziausias:
+#     didziausias = trecias_skaicius
+#
+# print(f"Didžiausias skaičius yra: {didziausias}")
 
 
+# .Susikurkite trijų egzaminų rezultatų kintamuosius arba paprašykite, kad
+# vartotojas suvestų šias reikšmes. Suraskite pažymių vidurkį. Atlikite šiuos
+# patikrinimus:
+# 1. ar gautas vidurkis yra [8-10];
+# 2. ar gautas vidurkis yra [5-8);
+# 3. ar gautas vidurkis yra < 5.
+
+#
+# rezultatas_1 = float(input("Įveskite pirmo egzamino rezultatą: "))
+# rezultatas_2 = float(input("Įveskite antro egzamino rezultatą: "))
+# rezultatas_3 = float(input("Įveskite trečio egzamino rezultatą: "))
+#
+# vidurkis = (rezultatas_1 + rezultatas_2 + rezultatas_3) / 3
+#
+# if 8 <= vidurkis <= 10:
+#     print(f"Vidurkis {vidurkis} - puikus rezultatas!")
+# elif 5 <= vidurkis < 8:
+#     print(f"Vidurkis {vidurkis} - patenkinamas rezultatas.")
+# else:
+#     print(f"Vidurkis {vidurkis} - egzaminas neišlaikytas.")
