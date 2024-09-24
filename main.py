@@ -177,3 +177,30 @@
 #         print("Patenkinamai!")
 #     else:
 #         print("Egzaminas neišlaikytas.")
+
+
+# Leiskite vartotojui suvesti norimą skaičių. Patikrinkite ar jis yra lyginis, jei
+# taip išveskite vieną informaciją, jei ne - kitą
+
+
+#
+# Skaičius = float(input("Įveskite norimą skaičių: "))
+#
+# if Skaičius % 2 == 0:
+#     print("Skaičius yra lyginis.")
+# else:
+#     print("Skaičius yra nelyginis.")
+
+
+# Leiskite vartotojui suvesti norimą skaičių. Patikrinkite ar šis skaičius
+# dalinasi iš 7, jei taip išveskite vieną tekstą, jei ne - kitą.
+
+# skaicius = float(input("Įveskite norimą skaičių: "))
+# if skaicius % 7 == 0:
+#     print("Skaičius dalinasi iš 7.")
+# else:
+#     print("Skaičius nedalinasi iš 7.")
+
+
+
+
