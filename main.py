@@ -1,3 +1,9 @@
-if 7;
-print("pitonas ananasas 'true'")
-else print("ananasas ne pitonas 'false")
+
+
+
+
+if 7:
+    print("hello")
+
+    if 7:
+        print("ok")
