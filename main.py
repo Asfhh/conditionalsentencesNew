@@ -322,5 +322,74 @@
 #     print(be_balsiu)
 
 
+#Stringe, kurį generuoja toks kodas: starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
+# import random
+#
+# starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
+# epizodo_numeris = starWars.split()[-4]
+# print(starWars)
+# print(epizodo_numeris)
+#
+#
+#
+# import random
+#
+# starWars = "Star Wars: Episode " + str(random.randint(1, 7)) + " - A New Hope"
+# epizodo_numeris = starWars.split()[3]
+# print(starWars)
+# print(epizodo_numeris)
+
+
+
+# vardai = ["Jonas", "Marytė", "Petras", "Laura", "Tomas"]
+# print("Vardai:", vardai)
+# print("Pirmas narys:", vardai[0])
+# print("Paskutinį narys:", vardai[-1])
+# print("Kiek narių:", len(vardai))
+
+
+# ugi = [180, 165, 175, 160, 170]
+# print("Ūgiai:", ugi)
+# print("Kiek ūgių:", len(ugi))
+
+# pazymiai = []
+# kiekis = int(input("Kiek pažymių norite įvesti? "))
+# for _ in range(kiekis):
+#     pazymys = input("Įveskite pažymį: ")
+#     pazymiai.append(pazymys)
+# print("Pažymiai:", pazymiai)
+# print("Kiek pažymių:", len(pazymiai))
+
+#
+# miestai = ["Vilnius", "Kaunas", "Klaipėda"]
+# print("Pradinis miestų sąrašas:", miestai)
+#
+# while True:
+#     naujas_miestas = input("Įveskite miestą, kurį norite pridėti (arba 'pabaiga' norint baigti): ")
+#     if naujas_miestas.lower() == 'pabaiga':
+#         break
+#     pozicija = int(input(f"Įveskite poziciją (0 - {len(miestai)}), kur norite pridėti miestą: "))
+#     miestai.insert(pozicija, naujas_miestas)
+#
+# print("Papildytas miestų sąrašas:", miestai)
+#
+# pasirinktas_sarasas = ["A", "B", "C", "D", "E"]
+# print("Pasirinktas sąrašas:", pasirinktas_sarasas)
+#
+# while True:
+#     kiek_pašalinti = int(input("Kiek įrašų norite pašalinti? "))
+#     for _ in range(kiek_pašalinti):
+#         if pasirinktas_sarasas:  # Patikriname, ar sąrašas nėra tuščias
+#             pasirinktas_sarasas.pop()
+#         else:
+#             print("Sąrašas jau tuščias!")
+#             break
+#
+#     print("Pašalintas sąrašas:", pasirinktas_sarasas)
+#
+#     if not pasirinktas_sarasas:
+#         break
+
+
 
 
