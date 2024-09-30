@@ -239,3 +239,88 @@
 #     print(f"Vidurkis {vidurkis} - patenkinamas rezultatas.")
 # else:
 #     print(f"Vidurkis {vidurkis} - egzaminas neišlaikytas.")
+
+
+# skaiciai = [47, 54, 25, 36, 87]
+#
+# print('masyvas:', skaiciai)
+# print('pirmas skaicius is masyvo:', skaiciai[0])
+# print('nariu masyve kiekis:', len(skaiciai))
+# print('paskutinis skaicius is masyvo:', skaiciai[len(skaiciai) - 1])
+
+#
+# skaiciai = []
+#
+# print(skaiciai)
+#
+# # list papildymas nurodyta reiksme, pildo i gala
+# skaiciai.append(87)
+# skaiciai.append(95)
+# #
+# # print(skaiciai)
+# #
+# #
+# # skaiciai.extend([147, 258, 399])
+# #
+# # print(skaiciai)
+# vardas = "Jonas"
+# pavarde = "Jonaitis"
+# print(min(vardas, pavarde, key=len))
+
+#
+#
+# vardas = "LEONARDO"
+# pavarde = "dicaprio"
+#
+#
+# print(vardas.upper())
+#
+#
+# print(pavarde.lower())
+
+# vardas = "Leonardo"
+# pavarde = "DiCaprio"
+#
+#
+# inicialai = vardas[0] + pavarde[0]
+#
+#
+# print(inicialai)
+
+#
+# vardas = "Leonardo"
+# pavarde = "DiCaprio"
+#
+#
+# paskutines_raides = vardas[-3:] + pavarde[-3:]
+#
+#
+# print(paskutines_raides)
+
+
+
+#Sukurti kintamąjį su stringu: "An American in Paris". Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+
+# stringas = "An American in Paris"
+# naujas_stringas = stringas.replace('a', '*').replace('A', '*')
+# print(naujas_stringas)
+
+#Sukurti kintamąjį su stringu: "An American in Paris". Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: "Breakfast at Tiffany's", "2001: A Space Odyssey" ir "It's a Wonderful Life".
+#
+# def is_balsis(char):
+#     return char.lower() in "aeiou"
+#
+# stringai = [
+#     "An American in Paris",
+#     "Breakfast at Tiffany's",
+#     "2001: A Space Odyssey",
+#     "It's a Wonderful Life"
+# ]
+#
+# for stringas in stringai:
+#     be_balsiu = ''.join([char for char in stringas if not is_balsis(char)])
+#     print(be_balsiu)
+
+
+
+
