@@ -391,5 +391,266 @@
 #         break
 
 
+# duomenys = [1, 2, 3, 4, 5, 6]
+# if len(duomenys) > 5:
+#     duomenys.clear()
+# print("Sąrašas po galimo išvalymo:", duomenys)
+
+# zodziai = ["obuolys", "bananas", "kriaušė", "manga", "citrina"]
+# norimas_zodis = input("Įveskite žodį, kurio norite ieškoti: ")
+# if norimas_zodis in zodziai:
+#     print(f"Žodis '{norimas_zodis}' yra sąraše, pozicija: {zodziai.index(norimas_zodis)}")
+# else:
+#     print(f"Žodžio '{norimas_zodis}' nėra sąraše.")
+
+# pazymiai = []
+# kiekis = int(input("Kiek pažymių norite įvesti? "))
+# for _ in range(kiekis):
+#     pazymys = int(input("Įveskite pažymį: "))
+#     pazymiai.append(pazymys)
+#
+# dešimtukai = pazymiai.count(10)
+# print(f"Studentas turi {dešimtukai} dešimtukų.")
+#
+
+# automobiliu_markes = []
+#
+# kiekis = int(input("Kiek automobilių markių norite įvesti? "))
+# for _ in range(kiekis):
+#     marke = input("Įveskite automobilio markę: ")
+#     automobiliu_markes.append(marke)
+#
+# print("Turimos automobilių markės:", automobiliu_markes)
+#
+# automobiliu_markes.sort()
+# print("Automobilių markės didėjimo tvarka:", automobiliu_markes)
+#
+# automobiliu_markes.sort(reverse=True)
+# print("Automobilių markės mažėjimo tvarka:", automobiliu_markes)
+#
+# pazymiai = []
+#
+# kiekis = int(input("Kiek pažymių norite įvesti? "))
+# for _ in range(kiekis):
+#     pazymys = int(input("Įveskite pažymį: "))
+#     pazymiai.append(pazymys)
+#
+# didziausi = sorted(pazymiai, reverse=True)[:3]
+# print("Tris didžiausi pažymiai:", didziausi)
+#
+#
+# pazymiai = []
+#
+# kiekis = int(input("Kiek pažymių norite įvesti? "))
+# for _ in range(kiekis):
+#     pazymys = int(input("Įveskite pažymį: "))
+#     pazymiai.append(pazymys)
+#
+# neigiami_pazymiai = [paz for paz in pazymiai if paz < 5]
+# print("Neigiamų pažymių kiekis:", len(neigiami_pazymiai))
+#
+#
+# sarasas = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+#
+# # 1. Paimkite pirmus tris narius
+# pirmi_trys = sarasas[:3]
+# print("Pirmi trys nariai:", pirmi_trys)
+#
+# # 2. Paimkite du narius, pradedant trečiu
+# du_nariai_nuo_trecios = sarasas[2:4]
+# print("Du nariai, pradedant trečiu:", du_nariai_nuo_trecios)
+#
+# # 3. Paimkite paskutinius keturis narius
+# paskutiniai_keturi = sarasas[-4:]
+# print("Paskutiniai keturi nariai:", paskutiniai_keturi)
+#
+# # 4. Paimkite kas antrą narį, pradedant trečiu nariu
+# kas_antras_nuo_trecios = sarasas[2::2]
+# print("Kas antras narys, pradedant trečiu:", kas_antras_nuo_trecios)
+#
+# # 5. Paimkite visus atbuline tvarka
+# atbuline_tvarka = sarasas[::-1]
+# print("Visi nariai atbuline tvarka:", atbuline_tvarka)
+#
+#
+#
+# vidurkiai = [7.5, 8.0, 9.2, 6.5, 8.7, 10.0, 5.5]
+#
+# # Surikiuojame ir paimame tris didžiausius
+# didziausi_vidurkiai = sorted(vidurkiai, reverse=True)[:3]
+# print("Tris didžiausi vidurkiai:", didziausi_vidurkiai)
+#
+#
+# zodziai = []
+#
+# while True:
+#     zodis = input("Įveskite žodį (arba 'pabaiga' norėdami baigti): ")
+#     if zodis.lower() == 'pabaiga':
+#         break
+#     zodziai.append(zodis)
+#     zodziai.sort()
+#     print("Žodžiai žodynėje:", zodziai)
+#
+#
+# sandelyje = [10, 3, 7, 1, 6, 5, 4]
+# mazai_likuciu = []
+#
+# for likutis in sandelyje:
+#     if likutis < 5:
+#         mazai_likuciu.append(likutis)
+#
+# print("Sandėlio likučiai, kurių lieka mažai:", mazai_likuciu)
+#
+#
+# sarasas = ["obuolys", "bananas", "apelsinas", "kriaušė", "vynuogė"]
+#
+# # 1. Kiekvieną elementą atskiriant kableliu ir tarpu
+# print("Kiekvienas elementas atskiriant kableliu ir tarpu:")
+# print(", ".join(f"{i+1}. {element}" for i, element in enumerate(sarasas)))
+#
+# # 2. Kiekvieną elementą atskiriant vertikaliu brūkšneliu
+# print("Kiekvienas elementas atskiriant vertikaliu brūkšneliu:")
+# print("|".join(sarasas))
+#
+# # 3. Kiekvieną elementą atskiriant tarpu
+# print("Kiekvienas elementas atskiriant tarpu:")
+# print(" ".join(sarasas))
+#
+#
+# informacija = ["Python", "Web", "index.html", "styles.css", "script.js"]
+#
+# # List unpacking
+# kalba, aplinka, *failai = informacija
+#
+# print("Naudojama programavimo kalba:", kalba)
+# print("Aplinka:", aplinka)
+# print("Failai, su kuriais dirbama:", failai)
+#
+#
+# komandos_nariai = ["Jonas Jonaitis", "Petras Petraitis", "Ona Onaitė", "Marytė Maraitė"]
+#
+# print("Prie projekto dirba šie komandos nariai:")
+# for narys in komandos_nariai:
+#     print(narys)
+#
+#
+# temos = ["Sąrašai", "Kintamieji", "Ciklai", "Funkcijos"]
+#
+# print("Mes jau mokėmės:")
+# for i, tema in enumerate(temos, start=1):
+#     print(f"{i}-a tema: {tema}")
+#
+# print("\nMes jau mokėmės (naudojant while ciklą):")
+# i = 1
+# while i <= len(temos):
+#     print(f"{i}-a tema: {temos[i - 1]}")
+#     i += 1
+#
+#
+# studiju_programos = ["Programų sistema", "Duomenų mokslas", "Dirbtinis intelektas", "Kibernetinis saugumas"]
+#
+# print("Studijų programos:")
+# for programa in studiju_programos:
+#     print(programa)
+#
+#
+# salys = ["Lietuva", "Latvija", "Estija", "Lenkija", "Vokietija"]
+#
+# print("\nŠalys:")
+# for salis in salys:
+#     print(f"Šalis: {salis}")
+
+#
+# prekiu_krepselis = ["obuolys", "bananas", "pienas", "duona", "kava"]
+#
+# print("Prekių krepšelyje yra:", len(prekiu_krepselis), "prekės.")
+# for i, prekė in enumerate(prekiu_krepselis, start=1):
+#     print(f"nr {i} pirkinys: {prekė}")
+#
+# pazymiai = [8, 10, 9, 7, 5, 6]
+#
+# pazymiai.sort(reverse=True)
+#
+# print("\nTurimi pažymiai:")
+# for pazymys in pazymiai:
+#     if pazymys == 10:
+#         reiksme = "puikiai"
+#     elif pazymys == 9:
+#         reiksme = "labai gerai"
+#     elif pazymys == 8:
+#         reiksme = "gerai"
+#     elif pazymys == 7:
+#         reiksme = "vidutiniškai"
+#     elif pazymys < 7:
+#         reiksme = "blogai"
+#     print(f"{pazymys} - {reiksme}")
+#
+# import random
+#
+# kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
+# atsitiktiniai_skaiciai = [random.randint(1, 100) for _ in range(kiekis)]
+#
+# print("Sugeneruoti atsitiktiniai skaičiai:", atsitiktiniai_skaiciai)
+#
+# print("\nSkaičiai ir jų kvadratai:")
+# for skaicius in atsitiktiniai_skaiciai:
+#     print(f"{skaicius} - {skaicius ** 2}")
+#
+#     sarasas = ["obuolys", "bananas", "manga", "kivi", "kriaušė"]
+#
+#     print("Pradinis sąrašas:", sarasas)
+#
+#     sarasas[1] = "vynuogės"
+#     sarasas[2] = "citrina"
+#     sarasas[4] = "ananasas"
+#
+#     print("Pakeistas sąrašas:", sarasas)
+
+# import random
+#
+# sarasas = [random.randint(1, 100) for _ in range(20)]
+#
+# lyginiai = [skaicius for skaicius in sarasas if skaicius % 2 == 0]
+# nelyginiai = [skaicius for skaicius in sarasas if skaicius % 2 != 0]
+# dalinasi_is_3 = [skaicius for skaicius in sarasas if skaicius % 3 == 0]
+#
+# print("Lyginiai skaičiai:", lyginiai)
+# print("Visi nelyginiai skaičiai:", nelyginiai)
+# print("Visi skaičiai, kurie dalinasi iš 3:", dalinasi_is_3)
+#
+# import random
+#
+# sarasas = [random.randint(1, 100) for _ in range(20)]
+# vidurkis = sum(sarasas) / len(sarasas)
+#
+# print("Sugeneruoti skaičiai:", sarasas)
+# print("Skaičiai didesni nei vidurkis:")
+# for skaicius in sarasas:
+#     if skaicius > vidurkis:
+#         print(skaicius)
 
 
+# 28.Susikurkite programą, kurioje būtų sukurtas sąrašas iš pasirinkto kiekio
+# atsitiktinių skaičių. Raskite kiekvieno skaičiaus daliklius, pavyzdžiui:
+# skaičius 2 dalinasi iš 2
+# skaičius 3 dalinasi iš 3
+# skaičius 4 dalinasi iš 2, 4
+# skaičius 5 dalinasi iš 5
+# skaičius 6 dalinasi iš 2, 3, 6
+import random
+
+
+kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
+
+
+skaiciai = [random.randint(1, 100) for _ in range(kiekis)]
+
+
+def rasti_daliklius(skaicius):
+    dalikliai = [d for d in range(1, skaicius + 1) if skaicius % d == 0]
+    return dalikliai
+
+
+for skaicius in skaiciai:
+    dalikliai = rasti_daliklius(skaicius)
+    print(f"Skaičius {skaicius} dalinasi iš: {', '.join(map(str, dalikliai))}")
