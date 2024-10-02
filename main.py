@@ -654,10 +654,40 @@
 # for skaicius in skaiciai:
 #     dalikliai = rasti_daliklius(skaicius)
 #     print(f"Skaičius {skaicius} dalinasi iš: {', '.join(map(str, dalikliai))}")
+#
+# start = 1
+# end = 9
+# for skaicius in range (start, end):
+#     print (str(skaicius) + " " +str(skaicius * skaicius))
+# else:
+#     print("Lempiniai skaičiai")
 
-start = 1
-end = 9
-for skaicius in range (start, end):
-    print (str(skaicius) + " " +str(skaicius * skaicius))
-else:
-    print("Lempiniai skaičiai")
+
+# Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti.
+# Patikrinkite, kad tai būtų validu (pradžia turi būti mažesnė nei pabaiga).
+# Jei rėžiai tinkami, tuomet vykdyti for, kuris iš duotų skaičių išvestų visus nelyginius
+# skaičius arba tuos, kurie dalinasi iš 8.
+
+#
+# start = 1
+# end = 9
+# if start < end:
+#     for skaicius in range(start, end):
+#         if skaicius % 2 != 0 or skaicius % 8 == 0:
+#             print(skaicius)
+
+
+# vardas = 'Justas'
+# for letter in vardas:
+#     print(vardas)
+# print("-----------------------")
+# for i in range(0, len(vardas)):
+#     print(i)
+
+# Leiskite vartotojui įvesti savo vardą. Ciklą for vykdykite tiek kartų kiek
+# tame varde yra raidžių. Visais atvejais išveskite tą patį pasisveikinimą,
+# pavyzdžiui "Labas, Ieva" (ši eilutė kartotųsi 4 kartus).
+
+for elementas in [55, 65, 21, 26, 47]:
+    if elementas % 2 == 0:
+        print(elementas)
