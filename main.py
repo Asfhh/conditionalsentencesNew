@@ -688,6 +688,25 @@
 # tame varde yra raidžių. Visais atvejais išveskite tą patį pasisveikinimą,
 # pavyzdžiui "Labas, Ieva" (ši eilutė kartotųsi 4 kartus).
 
-for elementas in [55, 65, 21, 26, 47]:
-    if elementas % 2 == 0:
-        print(elementas)
+# for elementas in [55, 65, 21, 26, 47]:
+#     if elementas % 2 == 0:
+#         print(elementas)
+
+# dydis = int(input("Įveskite eglutės dydį: "))
+#
+# for i in range(1, dydis + 1):
+#     print('*' * i)
+
+start = int(input("Įveskite pradžią: "))
+end = int(input("Įveskite pabaigą: "))
+step = int(input("Įveskite žingsnį: "))
+koksSk = input("Ar norite matyti lyginius skaičius? (taip/ne): ")
+
+isEven = True if koksSk.lower() == "taip" else False
+
+if start < end:
+    for i in range(start, end, step):
+        if (i % 2 == 0 and isEven) or (i % 2 != 0 and not isEven):
+            print(i)
+else:
+    print("Neteisingi rėžiai.")
