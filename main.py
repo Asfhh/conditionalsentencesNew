@@ -351,7 +351,7 @@
 # ugi = [180, 165, 175, 160, 170]
 # print("Ūgiai:", ugi)
 # print("Kiek ūgių:", len(ugi))
-
+#
 # pazymiai = []
 # kiekis = int(input("Kiek pažymių norite įvesti? "))
 # for _ in range(kiekis):
@@ -395,14 +395,14 @@
 # if len(duomenys) > 5:
 #     duomenys.clear()
 # print("Sąrašas po galimo išvalymo:", duomenys)
-
+#
 # zodziai = ["obuolys", "bananas", "kriaušė", "manga", "citrina"]
 # norimas_zodis = input("Įveskite žodį, kurio norite ieškoti: ")
 # if norimas_zodis in zodziai:
 #     print(f"Žodis '{norimas_zodis}' yra sąraše, pozicija: {zodziai.index(norimas_zodis)}")
 # else:
 #     print(f"Žodžio '{norimas_zodis}' nėra sąraše.")
-
+# #
 # pazymiai = []
 # kiekis = int(input("Kiek pažymių norite įvesti? "))
 # for _ in range(kiekis):
@@ -449,7 +449,7 @@
 # neigiami_pazymiai = [paz for paz in pazymiai if paz < 5]
 # print("Neigiamų pažymių kiekis:", len(neigiami_pazymiai))
 #
-#
+
 # sarasas = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 #
 # # 1. Paimkite pirmus tris narius
@@ -472,14 +472,14 @@
 # atbuline_tvarka = sarasas[::-1]
 # print("Visi nariai atbuline tvarka:", atbuline_tvarka)
 #
-#
-#
+# #
+
 # vidurkiai = [7.5, 8.0, 9.2, 6.5, 8.7, 10.0, 5.5]
 #
 # # Surikiuojame ir paimame tris didžiausius
 # didziausi_vidurkiai = sorted(vidurkiai, reverse=True)[:3]
 # print("Tris didžiausi vidurkiai:", didziausi_vidurkiai)
-#
+
 #
 # zodziai = []
 #
@@ -637,20 +637,27 @@
 # skaičius 4 dalinasi iš 2, 4
 # skaičius 5 dalinasi iš 5
 # skaičius 6 dalinasi iš 2, 3, 6
-import random
+# import random
+#
+#
+# kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
+#
+#
+# skaiciai = [random.randint(1, 100) for _ in range(kiekis)]
+#
+#
+# def rasti_daliklius(skaicius):
+#     dalikliai = [d for d in range(1, skaicius + 1) if skaicius % d == 0]
+#     return dalikliai
+#
+#
+# for skaicius in skaiciai:
+#     dalikliai = rasti_daliklius(skaicius)
+#     print(f"Skaičius {skaicius} dalinasi iš: {', '.join(map(str, dalikliai))}")
 
-
-kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
-
-
-skaiciai = [random.randint(1, 100) for _ in range(kiekis)]
-
-
-def rasti_daliklius(skaicius):
-    dalikliai = [d for d in range(1, skaicius + 1) if skaicius % d == 0]
-    return dalikliai
-
-
-for skaicius in skaiciai:
-    dalikliai = rasti_daliklius(skaicius)
-    print(f"Skaičius {skaicius} dalinasi iš: {', '.join(map(str, dalikliai))}")
+start = 1
+end = 9
+for skaicius in range (start, end):
+    print (str(skaicius) + " " +str(skaicius * skaicius))
+else:
+    print("Lempiniai skaičiai")
