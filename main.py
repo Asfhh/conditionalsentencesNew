@@ -697,16 +697,41 @@
 # for i in range(1, dydis + 1):
 #     print('*' * i)
 
-start = int(input("Įveskite pradžią: "))
-end = int(input("Įveskite pabaigą: "))
-step = int(input("Įveskite žingsnį: "))
-koksSk = input("Ar norite matyti lyginius skaičius? (taip/ne): ")
+# start = int(input("Įveskite pradžią: "))
+# end = int(input("Įveskite pabaigą: "))
+# step = int(input("Įveskite žingsnį: "))
+# koksSk = input("Ar norite matyti lyginius skaičius? (taip/ne): ")
+#
+# isEven = True if koksSk.lower() == "taip" else False
+#
+# if start < end:
+#     for i in range(start, end, step):
+#         if (i % 2 == 0 and isEven) or (i % 2 != 0 and not isEven):
+#             print(i)
+# else:
+#     print("Neteisingi rėžiai.")
 
-isEven = True if koksSk.lower() == "taip" else False
+#Išveskite visus skaičius nuo 1 iki 20.
 
-if start < end:
-    for i in range(start, end, step):
-        if (i % 2 == 0 and isEven) or (i % 2 != 0 and not isEven):
-            print(i)
-else:
-    print("Neteisingi rėžiai.")
+# i = 1
+# numbers = []
+#
+# while i <= 20:
+#     numbers.append(str(i))
+#     i += 1
+#
+# numbers_str = ' '.join(numbers)
+# print(numbers_str)
+
+# 2. Išveskite visus skaičius nuo 1 iki 50. Prie kiekvieno lyginio skaičiaus
+# parašykite žodį "lyginis", o prie kiekvieno nelyginio – "nelyginis".
+
+# result = []
+#
+# for i in range(1, 51):
+#     for i in range(1, 51):
+#         if i % 2 == 0:
+#             print(f"{i} lyginis")
+#         else:
+#             print(f"{i} nelyginis")
+
