@@ -567,7 +567,7 @@
 # for i, prekė in enumerate(prekiu_krepselis, start=1):
 #     print(f"nr {i} pirkinys: {prekė}")
 #
-# pazymiai = [8, 10, 9, 7, 5, 6]
+# pazymiai = [8, 10, 9, 7, 5, 6, 2, 2, 10]
 #
 # pazymiai.sort(reverse=True)
 #
@@ -584,7 +584,7 @@
 #     elif pazymys < 7:
 #         reiksme = "blogai"
 #     print(f"{pazymys} - {reiksme}")
-#
+# #
 # import random
 #
 # kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
@@ -637,24 +637,17 @@
 # skaičius 4 dalinasi iš 2, 4
 # skaičius 5 dalinasi iš 5
 # skaičius 6 dalinasi iš 2, 3, 6
+
 # import random
-#
-#
 # kiekis = int(input("Kiek atsitiktinių skaičių norite sugeneruoti? "))
-#
-#
 # skaiciai = [random.randint(1, 100) for _ in range(kiekis)]
-#
-#
 # def rasti_daliklius(skaicius):
 #     dalikliai = [d for d in range(1, skaicius + 1) if skaicius % d == 0]
 #     return dalikliai
-#
-#
 # for skaicius in skaiciai:
 #     dalikliai = rasti_daliklius(skaicius)
 #     print(f"Skaičius {skaicius} dalinasi iš: {', '.join(map(str, dalikliai))}")
-#
+
 # start = 1
 # end = 9
 # for skaicius in range (start, end):
@@ -735,3 +728,49 @@
 #         else:
 #             print(f"{i} nelyginis")
 
+# # Išveskite visus skaičius nuo 25 iki 50. Vietoj skaičių, kurie dalinasi iš 3
+# # išveskite tekstą "dalinasi iš 3".
+#
+# result = []
+# for i in range(25, 51):
+#     if i % 3 == 0:
+#         print("dalinasi iš 3")
+#     else:
+#         print(i)
+
+# Išveskite visus skaičius nuo 1 iki 100 arba iki tol kol pasitaikys toks, kuris
+# # dalinasi iš 7.
+# result = []
+# for i in range(1, 101):
+#     if i % 7 == 0:
+#         print(f"{i} dalinasi iš 7")
+#         break
+#     else:
+#         print(i)
+
+# 42.Susikurkite sąrašą įvykusių klaidų kodams saugoti ir užpildykite šį masyvą
+# duomenimis. Tuomet išveskite visas sukauptas klaidas administratoriui,
+# taip, kad jis suprastų kas per klaidos įvyko. Pavyzdžiui, jeigu yra kodas
+# "ui87", tai kad išvestų "Grafinės sąsajos klaida navigacijoje", arba jeigu
+# kodas "sys12", tuomet "Trūksta operatyviosios atminties sistemoje" ir
+# pan.
+
+error_codes = {
+    "ui87": "Grafinės sąsajos klaida navigacijoje",
+    "sys12": "Trūksta operatyviosios atminties sistemoje",
+    "net99": "Tinklo ryšio klaida",
+    "db34": "Duomenų bazės klaida",
+    "auth01": "Autentifikacijos klaida",
+    "io76": "Įvesties/išvesties klaida",
+    "perm03": "Teisių klaida",
+    "timeout": "Laiko limitas pasiektas",
+    "mem44": "Atminties nutekėjimas",
+    "config56": "Neteisinga konfigūracija",
+}
+encountered_errors = ["ui87", "sys12", "net99", "auth01", "timeout"]
+klaidos = []
+for code in encountered_errors:
+    description = error_codes.get(code, "Nežinoma klaida")
+    klaidos.append(f"Klaidos kodas: {code} - {description}")
+for error in klaidos:
+    print(error)
