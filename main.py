@@ -755,22 +755,41 @@
 # kodas "sys12", tuomet "Trūksta operatyviosios atminties sistemoje" ir
 # pan.
 
-error_codes = {
-    "ui87": "Grafinės sąsajos klaida navigacijoje",
-    "sys12": "Trūksta operatyviosios atminties sistemoje",
-    "net99": "Tinklo ryšio klaida",
-    "db34": "Duomenų bazės klaida",
-    "auth01": "Autentifikacijos klaida",
-    "io76": "Įvesties/išvesties klaida",
-    "perm03": "Teisių klaida",
-    "timeout": "Laiko limitas pasiektas",
-    "mem44": "Atminties nutekėjimas",
-    "config56": "Neteisinga konfigūracija",
-}
-encountered_errors = ["ui87", "sys12", "net99", "auth01", "timeout"]
-klaidos = []
-for code in encountered_errors:
-    description = error_codes.get(code, "Nežinoma klaida")
-    klaidos.append(f"Klaidos kodas: {code} - {description}")
-for error in klaidos:
-    print(error)
+# error_codes = {
+#     "ui87": "Grafinės sąsajos klaida navigacijoje",
+#     "sys12": "Trūksta operatyviosios atminties sistemoje",
+#     "net99": "Tinklo ryšio klaida",
+#     "db34": "Duomenų bazės klaida",
+#     "auth01": "Autentifikacijos klaida",
+#     "io76": "Įvesties/išvesties klaida",
+#     "perm03": "Teisių klaida",
+#     "timeout": "Laiko limitas pasiektas",
+#     "mem44": "Atminties nutekėjimas",
+#     "config56": "Neteisinga konfigūracija",
+# }
+# encountered_errors = ["ui87", "sys12", "net99", "auth01", "timeout"]
+# klaidos = []
+# for code in encountered_errors:
+#     description = error_codes.get(code, "Nežinoma klaida")
+#     klaidos.append(f"Klaidos kodas: {code} - {description}")
+# for error in klaidos:
+#     print(error)
+
+# numbers = [str(i) for i in range(77, 3001) if i % 77 == 0]
+# result = ", ".join(numbers)
+# print(result)
+
+# import random
+# skaiciai = [random.randint(1, 100) for _ in range(30)]
+#
+# dalinasi_is_3 = [skaicius for skaicius in skaiciai if skaicius % 3 == 0]
+#
+# suma = sum(dalinasi_is_3)
+# vidurkis = suma / len(dalinasi_is_3) if len(dalinasi_is_3) > 0 else 0
+#
+# print("Pradiniai duomenys:", skaiciai)
+# print("Skaičiai, kurie dalinasi iš 3:", dalinasi_is_3)
+# print("Suma:", suma)
+# print("Vidurkis:", vidurkis)
+
+
