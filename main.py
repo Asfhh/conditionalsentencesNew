@@ -871,3 +871,39 @@
 #         print(f' {i} {kvadratas}')
 # else:
 #     print('Rėžiai netinkami')
+
+#8. Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti.
+# Patikrinkite, kad tai būtų validu (pradžia turi būti mažesnė nei pabaiga).
+# Jei rėžiai tinkami, tuomet vykdyti for, kuris iš duotų skaičių išvestų visus nelyginius
+#skaičius arba tuos, kurie dalinasi iš 8.
+
+# pradzia = 1
+# pabaiga = 20
+#
+# if pradzia < pabaiga:
+#     print('Nelyginiai / dalinasi 8')
+#     for i in range(pradzia, pabaiga + 1):
+#         if i % 2 != 0 or i % 8 == 0:
+#             print(i)
+# else:
+#     print("Rėžiai netinkami.")
+
+
+
+# #19.The "Fizz-Buzz test" is an interview question designed to help filter out the
+# 99.5% of programming job candidates who can't seem to program their
+# way out of a wet paper bag.
+# The text of the programming assignment is as follows: "Write a program that prints the numbers from 1 to 100. But for multiples
+# of three print “Fizz” instead of the number and for the multiples of five
+# print “Buzz”. For numbers which are multiples of both three and five print
+# “FizzBuzz”."
+
+# for i in range(1, 101):
+#     if i % 3 == 0 or i % 5 == 0:
+#         print('FizzBuzz')
+#     elif i % 3 == 0:
+#         print('Fizz')
+#     elif i % 5 == 0:
+#         print('Buzz')
+#     else:
+#         print(i)
