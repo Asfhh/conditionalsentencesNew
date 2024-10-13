@@ -792,4 +792,82 @@
 # print("Suma:", suma)
 # print("Vidurkis:", vidurkis)
 
+#43. Susikurkite sąrašą sandėlio likučiams saugoti
+# (kiekvienas atskiras narys sąraše yra atskiros prekės likutis).
+# Su kiekvienu likučiu paskaičiuokite per kiek dienų bus išpirktas,
+# jei per dieną vidutiniškai yra nuperkami 5 vnt.
+# Išveskite atsakymus atskirose eilutėse,
+# nurodant kiek yra dabar ir kiek dienų užteks jo.
+# Pavyzdžiui, jeigu yra likučiai 74, 54 ir 32, tai 74 vnt. prekės
+# užteks maždaug 15 dienų, 54 vnt. prekės užteks maždaug 11 dienų ir t.t.
+# Pabandykite papildyti programą taip, kad į atskirą sąrašą atrinktų tas
+# prekes, kurių užteks savaitei ar mažiau, jas išveskite atskirai, pačioje
+# pabaigoje.
 
+# likuciai = [74, 54, 32, 15, 8, 90, 3]
+# iki_ispirkimo = []
+# savaitei_maziau = []
+#
+# for likutis in likuciai:
+#     dienos = likutis // 5
+#     iki_ispirkimo.append(dienos)
+#     print(f'{likutis} vnt. prekių užteks {dienos} dienų')
+# if savaitei_maziau:
+#     print('\nPrekės, kurių užteks savaitei ar mažiau: ')
+#     for likutis in savaitei_maziau:
+#         print(f'{likutis} vnt')
+
+# virsuj tikriausiai susimaiše listai ir išmetytos temos
+
+# -- Ciklas for
+#1. Su for pagalba penkis kartus išveskite savo vardą
+# vardas = 'Jonas'
+# for _ in range(5):
+#     print(vardas)
+#2.Parašyti for, kuris išvestų kiekvieną skaičių pradedant nuo 0 ir baigiant 10.
+# print('Skaičiai nuo 0 iki 10: ')
+# for i in range(10):
+#     print(i)
+#3. Išvesti kas antrą skaičių pradedant 0 ir baigiant 15
+# print('Kas antras skaičius nuo 0 iki 15: ')
+# for i in range(0, 15, 2):
+#     print(i)
+## 4. Išvesti kas trečią skaičių pradedant 1 ir baigiant 20.
+# print('Kas trečias skaitmuo: ')
+# for i in range(1, 20, 3):
+#     print(f' [{i}]')
+#5 Parašyti for, kuris eitų pro kiekvieną skaičių nuo 1 iki 20. Jame apsirašyti if
+# sąlygą, kuri patikrintų ar dabartinis skaičius dalinasi iš 4, jei taip tai šį
+# skaičių išvesti.
+# print('Skaičiai, kurie dalinasi iš 4: ')
+# for i in range(1, 21):
+#     if i % 4 == 0:
+#         print(i)
+#6.Išveskite visus skaičius nuo 1 iki 15,
+# prie kiekvieno jų nurodant tai lyginis
+# ar nelyginis skaičius. Pvz:
+# 1 - nelyginis
+# 2 - lyginis
+# 3 - nelyginis
+
+# for i in range(1, 16):
+#     if i % 2 == 0:
+#         print(f' {i} Lyginis')
+#     else:
+#         print(f' {i} Nelyginis')
+#7. Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti.
+# Patikrinkite, kad tai būtų validu
+# (pradžia turi būti mažesnė nei pabaiga).
+# Jei rėžiai tinkami, tuomet vykdyti for,
+# kuris atskirose eilutėse išvestų kiekvieną skaičių
+# iš tų rėžių, bei atskiriant tarpu - tų skaičių kvadratus.
+
+# pradzia = 1
+# pabaiga = 10
+# if pradzia < pabaiga:
+#     print('Rėžiai tinkami: ')
+#     for i in range(pradzia, pabaiga + 1):
+#         kvadratas = i ** 2
+#         print(f' {i} {kvadratas}')
+# else:
+#     print('Rėžiai netinkami')
